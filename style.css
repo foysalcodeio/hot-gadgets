@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+h4{
+    font-family: 'Fredoka', sans-serif;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.clip-art-1, .clip-art-2, .clip-art-3{
+    height: 200px;
+    width: 220px;
+    text-align: center;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 5px 5px 15px rgb(223, 161, 223) ;
+    transition: .5s;
+}
+.clip-art-1:hover, .clip-art-2:hover, .clip-art-3:hover{
+    transform: translateY(-15px);
+    transition: .7s ease-in-out;
+}
+.card{
+    padding: 10px;
+    border: none;
+    box-shadow: 5px 3px 10px rgb(64, 77, 98);
+    border-radius: 20px;
+}
+.card:hover{
+    animation: animate 2s linear 0.30s 1 alternate;
+}
+@keyframes animate {
+    0%{
+        top: 0px;
+    }
+    25%{
+        top: -10px;
+    }
+    50%{
+        top: -20px;
+    }
+    75%{
+        top: -10px;
+    }
+    100%{
+        top: 0px;
+    }
+}
