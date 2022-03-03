@@ -2,6 +2,39 @@
 h4{
     font-family: 'Fredoka', sans-serif;
 }
+body{
+    font-family: 'Poppins';
+}
+a:hover{
+    text-decoration: none;
+    color: #FFD019;
+}
+.bn-sec{
+    background-image: url(./bg-2.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 12%;
+}
+.carousel-item{
+    background-image: url(./bg-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50px;
+    background-size: 7%;
+}
+.carousel-indicators li{
+    background-color: #CECECE;
+    height: 10px;
+    width: 16px;
+    border-radius: 6px;
+    border: none;
+}
+.carousel-indicators .active{
+    background-image: linear-gradient(to right, #FF9C35, #FFD019);
+    width: 45px;
+}
+
+
 .mb-100{
     margin-bottom: 100px;
 }
@@ -20,11 +53,19 @@ h4{
 .card{
     padding: 10px;
     border: none;
-    box-shadow: 5px 3px 10px rgb(64, 77, 98);
+    box-shadow: 5px 3px 10px rgb(236, 182, 203);
     border-radius: 20px;
 }
 .card:hover{
     animation: animate 2s linear 0.30s 1 alternate;
+}
+span.color-bar{
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 5px;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, rgb(17, 236, 10), rgb(5, 98, 49));
 }
 @keyframes animate {
     0%{
@@ -42,4 +83,58 @@ h4{
     100%{
         top: 0px;
     }
+}
+.social-contact li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+}
+.social-contact li a:hover{
+    background-image: linear-gradient(to left, #0931e0, #23a9e7);
+    color: white;
+}
+.social-icon-section{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.social-icon{
+    margin: 0px 5px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background: black;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon .fa{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.social-icon:hover{
+    background-color:crimson;
+}
+.social-icon a:hover{
+    color: white;
+}
+
+
+.buscat:hover{
+    transform: scale(1.02);
+}
+.footer a{
+    color: gray;
+}
+.footer p{
+    margin: 0px;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
 }
